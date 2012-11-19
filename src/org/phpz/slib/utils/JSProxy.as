@@ -71,7 +71,7 @@ package org.phpz.slib.utils
         {
             if (funcDict[key])
             {
-                return funcDict[key](args);
+                return args ? funcDict[key](args) : funcDict[key]();
             }
             else
             {
